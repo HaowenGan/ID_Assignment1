@@ -28,6 +28,8 @@ body, html {
     position: absolute;
     top: 8px;
     left: 16px;
+    height: 50%;
+    width: 50%;
   }
   
   /* Top right text */
