@@ -15,7 +15,7 @@
                     <ul>
                         <li><a href="index.html">About Myself</a></li>
                         <li><a href="Education.html">Education</a></li>
-                        <li><a href ="AccomplishmentsandSkills.html">Accomplishments</a></li>
+                        <li><a href ="AccomplishmentsandSkills.html">Accomplishments & Skills</a></li>
                         <li><a href ="Contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -25,6 +25,8 @@
         <section class="showcase">
             <div class="container grid">
                 <div class="showcase-text">
+                    <br>
+                    <br>
                     <h1>My Contact Information</h1>
                     <p>
                         Email: GanHaowen@gmail.com.sg
@@ -36,7 +38,7 @@
 
                 <h2>Want to Contact me?</h2>
                 <div class="container">
-                    <form id = "Myform">
+                    <form id = "myForm">
                   
                       <label for="fname">First Name</label>
                       <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -52,7 +54,15 @@
                       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                   
                       <input type="submit" value="Submit">
-                  
+
+                      <script>
+                          document.getElementById("myForm").onsubmit = function() {myFunction()};
+                          function myFunction() {
+                          alert("The form was submitted! Thank you for the feedback!");
+                          }
+                      </script>
+                      
+
                     </form>
                   </div>
             </div>
